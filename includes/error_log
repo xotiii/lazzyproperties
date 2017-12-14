@@ -1,0 +1,92 @@
+[26-Nov-2017 09:13:07 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:11 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:36 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:40 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:13:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:22 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:24 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:25 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:26 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 09:32:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[26-Nov-2017 22:48:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[27-Nov-2017 00:04:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[27-Nov-2017 00:22:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[27-Nov-2017 07:12:56 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:12:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:13:10 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:13:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:18:35 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:18:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:22:41 UTC] PHP Notice:  Undefined variable: dbh in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[27-Nov-2017 07:22:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/lazzytechnology/public_html/includes/ajax.php:162
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/ajax.php on line 162
+[29-Nov-2017 04:00:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[30-Nov-2017 11:14:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[01-Dec-2017 16:14:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[03-Dec-2017 01:07:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17
+[10-Dec-2017 01:35:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function property_page() in /home/lazzytechnology/public_html/includes/property-page.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/lazzytechnology/public_html/includes/property-page.php on line 17

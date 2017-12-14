@@ -1,0 +1,9 @@
+env: flex
+runtime: php
+api_version: 1
+runtime_config:
+  document_root: .
+env_variables:
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/cosmo-asia:asia-northeast1:lazzypropertiesdb;dbname=lazzypropertiesdb
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
