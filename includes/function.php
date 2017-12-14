@@ -2015,7 +2015,7 @@ function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
 		
-		$to      = 'nobody@example.com';
+		$to      = 'xoti.chua@gmail.com';
 		$subject = 'the subject';
 		$message = 'hello';
 		$headers = 'From: noreply@lazzyproperty.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
