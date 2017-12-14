@@ -144,6 +144,7 @@
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4EFKbbWeDCGWiH4VHV6aQTDVI0op9bP8&libraries=places&callback=initialize">
   </script>
+  <div id="content">
 <div class="container">
   <div class="slider-area">
     <div class="slider-content">
@@ -557,4 +558,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
