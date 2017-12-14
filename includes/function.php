@@ -17,8 +17,8 @@ function reg_user()
 {
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -83,8 +83,8 @@ function reg_user()
 function login(){
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -145,8 +145,8 @@ function login(){
 function post_property(){
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -363,8 +363,8 @@ function property_list() {
 	
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -878,8 +878,8 @@ function property_page(){
 	}
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	$i = '';
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
@@ -1173,8 +1173,8 @@ function property_page(){
 function home(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1236,8 +1236,8 @@ function home(){
 
 function profile(){
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1305,8 +1305,8 @@ function profile(){
 
 function profile_settings($selector){
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1366,8 +1366,8 @@ function profile_settings($selector){
 function save_info(){
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1417,8 +1417,8 @@ function save_info(){
 
 function propertylist(){
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1476,8 +1476,8 @@ function propertylist(){
 function prop_list(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	$i = "'";
 	$userID = $_GET['uId'];
 	try{
@@ -1539,8 +1539,8 @@ function prop_list(){
 function send_new_message(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1596,8 +1596,8 @@ function send_new_message(){
 function inbox_list(){
 	
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	$status='';
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
@@ -1715,8 +1715,8 @@ function inbox_list(){
 function delete_message(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1754,8 +1754,8 @@ function delete_message(){
 function reply_message(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1805,8 +1805,8 @@ function reply_message(){
 function sent_list(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	$indent='';
 	$status='';
 	try{
@@ -1912,8 +1912,8 @@ function sent_list(){
 function delete_sent(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -2026,8 +2026,8 @@ function upload_prof_pic(){
 function change_pass(){
 
 	$servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,

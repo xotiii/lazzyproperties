@@ -3,8 +3,8 @@ require "php/class.uploadImages.php";
 
 function post(){
 $servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -139,8 +139,8 @@ $servername = "localhost";
 
 
 $servername = "localhost";
-	$username = "lazzy";
-	$password = "wonglazzy";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
