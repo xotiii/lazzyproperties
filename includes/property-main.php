@@ -1,6 +1,11 @@
   <script src="assets/js/jquery-1.10.2.min.js"></script>
   
-  <script></script>
+<script type="text/javascript">
+function reply_click(clicked_id)
+{
+    alert(clicked_id);
+}
+</script>
 
 <br><br><br><br>
         <!-- property area -->
@@ -14,7 +19,7 @@
                     <div class="col-md-12 clear"> 
                         <div class="col-xs-10 page-subheader sorting pl0">
                             <ul class="sort-by-list">
-                                <li class="active">
+                                <li class="active" id="sort_date" onclick="reply_click(this.id)">
                                     <a href="javascript:void(0);" class="order_by_date" data-orderby="property_date" data-order="ASC">
                                         Property Date <i class="fa fa-sort-amount-asc"></i>					
                                     </a>
