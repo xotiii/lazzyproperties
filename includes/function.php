@@ -2016,7 +2016,7 @@ function change_pass(){
 function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
-		
+		ini_set("SMTP","mail.lazzyproperty.com");
 		$to      = 'xoti.chua@gmail.com';
 		$subject = 'the subject';
 		$message = 'hello';
