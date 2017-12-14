@@ -900,6 +900,8 @@ function property_page(){
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
 			$m = "'map'";
+			$user_type='';
+			$user_contact='';
 			$results = $stmt->fetchAll();
 			$link = 'index.php?source=property-page';
 			$link1 ='index.php?source=profile-view&User_ID=';
@@ -926,6 +928,18 @@ function property_page(){
 				}
 				if(htmlentities($row['User_ID'])==$uID){
 					$link1='index.php?source=profile&User_ID=';
+				}
+				if(htmlentities($row['User_Type'])=='a'){
+					$user_type='Real Estate Agent';
+				}
+				else if(htmlentities($row['User_Type'])=='b'){
+					$user_type='Property Owner';
+				}
+				if(htmlentities($row['Hide'])==1){
+					$user_contact='';
+				}
+				else{
+					$user_contact='<li><i class="pe-7s-call strong"> </i> '.htmlentities($row['Mobile']).'</li>';
 				}
 				
 				
@@ -1112,8 +1126,8 @@ function property_page(){
                                             </div>
                                             <div class="col-xs-8 col-sm-8 ">
                                                 <h3 class="dealer-name">
-                                                    <a href="">'.htmlentities($row['First_Name']) . ' ' . htmlentities($row['Last_Name']).'</a><br/>
-                                                    <span>Real Estate Agent</span>        
+                                                    <a href="'.$link1.htmlentities($row['User_ID']).'">'.htmlentities($row['First_Name']) . ' ' . htmlentities($row['Last_Name']).'</a><br/>
+                                                    <span>'.$user_type.'</span>        
                                                 </h3>
                                                 <div class="dealer-social-media">
                                                     <a class="twitter" target="_blank" href="">
@@ -1137,12 +1151,15 @@ function property_page(){
                                         </div>
 
                                         <div class="clear">
+											
                                             <ul class="dealer-contacts">                                       
                                                 <!--<li><i class="pe-7s-map-marker strong"> </i> 9089 your adress her</li>-->
                                                 <li><i class="pe-7s-mail strong"> </i> '.htmlentities($row['Email']).'</li>
-                                                <li><i class="pe-7s-call strong"> </i> '.htmlentities($row['Mobile']).'</li>
+                                                '.$user_contact.'
                                             </ul>
-                                            <!--<p>Duis mollis  blandit tempus porttitor curabiturDuis mollis  blandit tempus porttitor curabitur , est non…</p>-->
+											<br/>
+											
+                                            <p>'.nl2br(htmlentities($row['Bio'])).'</p>
                                         </div>
 
                                     </div>
@@ -1950,81 +1967,6 @@ function delete_sent(){
 
 }
 
-function upload_prof_pic(){
-	if(isset($_POST["save_prof_pic"])) {
-		$target_dir = 'images/user/'.$_SESSION['ID'];
-		if (!is_dir($target_dir)) {
-			mkdir($target_dir);
-		}
-		$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-		$uploadOk = 1;
-		$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-		$extension = pathinfo($_FILES["fileToUpload"]["name"], PATHINFO_EXTENSION);
-		// Check if image file is a actual image or fake image
-		
-			$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-			if($check !== false) {
-				echo "File is an image - " . $check["mime"] . ".";
-				$uploadOk = 1;
-			} else {
-				echo "File is not an image.";
-				$uploadOk = 0;
-			}
-		
-		// Check if file already exists
-		if (file_exists($target_file)) {
-			echo "Sorry, file already exists.";
-			$uploadOk = 0;
-		}
-		// Check file size
-		if ($_FILES["fileToUpload"]["size"] > 500000) {
-			echo "Sorry, your file is too large.";
-			$uploadOk = 0;
-		}
-		// Allow certain file formats
-		if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-		&& $imageFileType != "gif" ) {
-			echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-			$uploadOk = 0;
-		}
-		// Check if $uploadOk is set to 0 by an error
-		if ($uploadOk == 0) {
-			echo "Sorry, your file was not uploaded.";
-		// if everything is ok, try to upload file
-		} else {
-			
-			$maxDimW = 100;
-			$maxDimH = 50;
-			list($width, $height, $type, $attr) = getimagesize( $_FILES["fileToUpload"]["tmp_name"] );
-			if ( $width > $maxDimW || $height > $maxDimH ) {
-				$target_filename = $_FILES['photo']['tmp_name'];
-				$fn = $_FILES["fileToUpload"]["tmp_name"];
-				$size = getimagesize( $fn );
-				$ratio = $size[0]/$size[1]; // width/height
-				if( $ratio > 1) {
-					$width = $maxDimW;
-					$height = $maxDimH/$ratio;
-				} else {
-					$width = $maxDimW*$ratio;
-					$height = $maxDimH;
-				}
-				$src = imagecreatefromstring(file_get_contents($fn));
-				$dst = imagecreatetruecolor( $width, $height );
-				imagecopyresampled($dst, $src, 0, 0, 0, 0, $width, $height, $size[0], $size[1] );
-
-				imagejpeg($dst, $target_file); // adjust format as needed
-			}
-			
-			if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_dir."/1.".$extension)) {
-				echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-			} else {
-				echo "Sorry, there was an error uploading your file.";
-			}
-		}
-	
-	}
-}
-
 function change_pass(){
 
 	$servername = "localhost";
@@ -2069,7 +2011,19 @@ function change_pass(){
 			echo "Error: " . $e->getMessage();
 		}
 	}
+}
 
+function contact_seller(){
+
+	if(isset($_POST['contact_seller'])){
+		
+		$to      = 'nobody@example.com';
+		$subject = 'the subject';
+		$message = 'hello';
+		$headers = 'From: noreply@lazzyproperty.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
+			mail($to, $subject, $message, $headers);
+			echo 'Message successfully sent!';
+	}
 
 }
 

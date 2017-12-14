@@ -191,6 +191,36 @@
                                                 <li><i class="pe-7s-call strong"> </i> +1 908 967 5906</li>
                                             </ul>
                                             <!--<p>Duis mollis  blandit tempus porttitor curabiturDuis mollis  blandit tempus porttitor curabitur , est non…</p>-->
+                                              <div class="col-sm-12" id="parent">
+      
+
+      <div class="col-md-12">
+        <form action="" class="contact-form" method="post">
+			<?php contact_seller();?>
+            <div id="cont-mess"><h4><strong> <span class="glyphicon glyphicon-envelope"></span> Contact this Seller</strong></h4> </div>
+            <h4></h4>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+            </div>
+        
+        
+            <div class="form-group form_left">
+              <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+            </div>
+        
+          <div class="form-group">
+               <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
+          </div>
+          <div class="form-group">
+          <textarea class="form-control textarea-contact" rows="5" id="message" name="FB" placeholder="Send a Message..." required=""></textarea>
+          <br>
+            <button class="btn btn-default btn-send" type="submit" name="contact_seller"> <span class="glyphicon glyphicon-send"></span> Send </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
                                         </div>
 
                                     </div>
