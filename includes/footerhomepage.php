@@ -1,38 +1,38 @@
   <!-- Footer area-->
-        <div class="footer-area">
+        <div class="">
 
             <div class=" footer">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
-                            <div class="single-footer">
-                                <h4>About us </h4>
-                                <div class="footer-title-line"></div>
+                            <!-- <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                                <div class="single-footer">
+                                    <h4>About us </h4>
+                                    <div class="footer-title-line"></div>
 
-                                <h4>Lazzy Properties</h4>
-                                <p></p>
-                                <ul class="footer-adress">
-                                    <li><i class="pe-7s-map-marker strong"> </i> 9089 your adress here</li>
-                                    <li><i class="pe-7s-mail strong"> </i> lazzytechnology@gmail.com</li>
-                                    <li><i class="pe-7s-call strong"> </i> +9 908 967 5906</li>
-                                </ul>
+                                    <h4>Lazzy Properties</h4>
+                                    <p></p>
+                                    <ul class="footer-adress">
+                                        <li><i class="pe-7s-map-marker strong"> </i> 9089 your adress here</li>
+                                        <li><i class="pe-7s-mail strong"> </i> lazzytechnology@gmail.com</li>
+                                        <li><i class="pe-7s-call strong"> </i> +9 908 967 5906</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
-                            <div class="single-footer">
-                                <h4>Quick links </h4>
-                                <div class="footer-title-line"></div>
-                                <ul class="footer-menu">
-                                    <li><a href="index.php?source=property-forsale">Properties</a>  </li> 
-                                    <li><a href="index.php?source=postproperty">Submit property </a></li> 
-                                    <li><a href="contact.html">Contact/Feedback</a></li> 
-                                    <li><a href="faq.html">fqa</a>  </li> 
-                                    <li><a href="faq.html">Terms </a>  </li> 
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                            <div class="col-md-3 col-sm-6 wow fadeInRight animated">
+                                <div class="single-footer">
+                                    <h4>Quick links </h4>
+                                    <div class="footer-title-line"></div>
+                                    <ul class="footer-menu">
+                                        <li><a href="index.php?source=property-forsale">Properties</a>  </li> 
+                                        <li><a href="index.php?source=postproperty">Submit property </a></li> 
+                                        <li><a href="contact.html">Contact/Feedback</a></li> 
+                                        <li><a href="faq.html">fqa</a>  </li> 
+                                        <li><a href="faq.html">Terms </a>  </li> 
+                                    </ul>
+                                </div>
+                            </div> -->
+<!--                         <div class="col-md-3 col-sm-6 wow fadeInRight animated">
                             <div class="single-footer">
                                 <h4>Stay in touch</h4>
                                 <div class="footer-title-line"></div>
@@ -43,7 +43,6 @@
                                             <button class="btn btn-primary subscribe" type="button"><i class="pe-7s-paper-plane pe-2x"></i></button>
                                         </span>
                                     </div>
-                                    
                                 </form> 
 
 
@@ -96,15 +95,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6 wow fadeInRight animated">
                             <div class="single-footer news-letter">
-                                
-                                <p></p>
-
-                                
-
-                               
+                                 -->
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

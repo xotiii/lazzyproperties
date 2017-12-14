@@ -169,10 +169,6 @@
 
 
     <li><a href="#rent" data-toggle="tab">For Rent</a></li>
-
-    <li><a href="#dev" data-toggle="tab">For Development</a></li>
-
-     <li><a href="#com" data-toggle="tab">Commericial and Land</a></li>
 </ul>
 
 <div class="tab-content">
