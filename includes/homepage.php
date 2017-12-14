@@ -368,7 +368,7 @@
                       <div class="tab-content">
                         <div class="tab-pane active" id="sale">
                           <form action="" class="form-inline">
-                            <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forsale">
+                            <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forrent">
                             <div class="form-group">
                               <input class="col-xs-12 form-control" id="autocomplete" onfocus="geolocate()" placeholder="Search a Property" type="text"> <input id="country" name="country" type="hidden"> <input id="postal_code" name="zip" type="hidden"> <input id="administrative_area_level_1" name="state" type="hidden"> <input id="locality" name="city" type="hidden"> <input id="route" name="route" type="hidden"> <input id="street_number" type="hidden">
                             </div>
