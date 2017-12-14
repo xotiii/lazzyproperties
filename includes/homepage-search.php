@@ -188,6 +188,9 @@
                   <input type="hidden" id="locality" name="city" ></input>
                   <input type="hidden" id="route" name="route" ></input>
                   <input type="hidden" id="street_number" ></input>
+				  
+					<input type="hidden" name="datesort" value="DESC"></input>
+					<input type="hidden" name="pricesort"></input>
 
                                 </div>
                     <div class="search-row">
