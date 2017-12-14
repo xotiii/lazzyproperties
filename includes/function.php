@@ -296,6 +296,8 @@ function property_list() {
 	$size="";
 	$bed="";
 	$date="";
+
+
 	if(isset($_GET['type'])){
 		$type = $_GET['type'];
 	}
@@ -967,7 +969,7 @@ function property_page(){
                                         <a class="add-to-fav" href="#login-modal" data-toggle="modal">
                                             <i class="fa fa-star-o"></i>
                                         </a>
-                                        <a class="printer-icon " href="javascript:window.print()">
+                                        <a class="printer-icon " href="includes/print/profile.php?propId='.$Id.'">
                                             <i class="fa fa-print"></i> 
                                         </a>
                                     </div> 

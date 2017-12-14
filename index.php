@@ -104,7 +104,7 @@ session_start();?>
         default:
             include "includes/homepage.php";
              
-             include "includes/homepage-countarea.php"; 
+             // include "includes/homepage-countarea.php"; 
              include "includes/homepage-buyandsell.php";
              
         break;

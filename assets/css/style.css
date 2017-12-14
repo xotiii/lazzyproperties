@@ -8,13 +8,17 @@ html, body {
 body {
     height:100%;
     font-family: 'Open Sans', sans-serif; 
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/bgimage.jpg') no-repeat center center fixed;
+    
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
     font-weight: 300;
     padding:0;
     margin:0;
     font-size:14px;
     line-height: 28px;
     color: #777; 
-    background: #fff; 
     position: relative;
 }
 /*           Font Smoothing      */
@@ -853,18 +857,16 @@ position: fixed;
     transition: all 0.4s ease;
 }
 .nav-button.login{
-    background-color: Transparent;
-    background-repeat:no-repeat;
+    background-color: #e74c3c;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
+    FONT-SIZE: 20px;
+    WIDTH: 200PX;
     overflow: hidden;
-    outline:none;
-  
-    margin-right: 150px;
-    margin-top: -5px;
-
+    outline: none;
+    margin-right: 20px;
     border-radius: 3px;
-    padding: 5px;
     
     
 }
@@ -1144,10 +1146,10 @@ position: fixed;
 
 .slider-area{
     position: relative;
-    height: 700px;
+    height: 795px;
     margin-bottom: -180px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/bgimage.jpg');
-    background-attachment: fixed;
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/bgimage.jpg');
+    */background-attachment: fixed;
         background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2241,14 +2243,14 @@ single property page
 }
 
 .sidebar-property{
- 
+    background-color:#EEE;
     padding: 15px 25px 25px;
 }
 .dealer-widget {
-    background-color: #e74c3c;
+    background-color: #838383;
     padding: 15px;
     color:#FFF;
-    padding-bottom: 321px;
+    padding-bottom: 20px;
     margin: -15px -15px 25px;
 }
 .dealer-name{
@@ -2256,7 +2258,7 @@ single property page
     margin-bottom: 5px;
 }
 .dealer-name a {
-    color: white;
+    color: #626262;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -2273,7 +2275,7 @@ single property page
     border: 2px solid #FFF;
 }
 .dealer-social-media a{
-    color: white;
+    color: #969696;
     margin: 5px;
 }
 .dealer-contacts{
@@ -2281,7 +2283,7 @@ single property page
     padding: 30px 0px 0px 10px;
 }
 .dealer-contacts li i{
-    color: white;
+    color: black;
     padding-right: 8px;
 }
 .clear{ 
@@ -2962,7 +2964,6 @@ padding-bottom: 15px;
 /*FOOOTER*/
 .footer-area{
 border-top: 1px solid #D1D1D1;
-background: #555 url("../../assets/img/bg-footer.jpg") repeat scroll 0% 0%;
 color: #535353;
 }
 .footer{
@@ -4254,15 +4255,3 @@ box-shadow: 0px 2px 63px -13px rgba(0,0,0,0.36);
 .profile.is-dragover .message.is-wrong-image-size {
   display: none;
 }
-
-#cont-mess span{
-
-   font-size: 19px;
-}
-
-#cont-mess a{
-    color: black;
-   font-size: 19px;
-
-}
-
