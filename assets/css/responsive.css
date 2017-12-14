@@ -107,8 +107,10 @@
         font-size: 13px;
     }
     .nav-button{
-        font-size: 13px;
-        padding: 6px 13px;
+    font-size: 12.5px;
+    padding: 6px 3px;
+    height: 30px;
+    line-height: 8px;
     }
     .navbar-nav > li > a{
         padding-left: 15px;
@@ -240,7 +242,7 @@
         top: 100px;
     }
     .footer-copy{
-        padding: 0 20px;
+        margin-top: 567px;
     }
     .single-footer {
         margin-top: 35px;
@@ -841,7 +843,7 @@
 @media (max-width:480px){
 
     .page-title {
-        padding-top: 550px;
+        
        
     }
     .search-btn
