@@ -426,7 +426,7 @@ function property_list() {
 					$query .=' AND BED='.$bed;
 				}
 			}
-			$query .= " ORDER BY `Property_ID` DESC LIMIT 2 ";
+			$query .= " ORDER BY `Property_ID` DESC  ";
 			$stmt = $dbh->prepare($query);
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
