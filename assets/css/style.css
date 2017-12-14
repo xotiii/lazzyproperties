@@ -1146,8 +1146,7 @@ position: fixed;
 
 .slider-area{
     position: relative;
-    height: 795px;
-    margin-bottom: -180px;
+    height: 565px;
     /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/bgimage.jpg');
     */background-attachment: fixed;
         background-position: center;

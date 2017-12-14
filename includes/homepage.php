@@ -147,7 +147,7 @@
 <div class="container">
   <div class="slider-area">
     <div class="slider-content">
-      <div class="row">
+      <div class="row"><br><br><br>
         <h2>Bringing You Closer To Your Dream Home</h2><br>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
           <div class="button">
