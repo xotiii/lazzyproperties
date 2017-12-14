@@ -51,7 +51,12 @@ session_start();?>
              include "includes/property-page.php"; 
             break;
         case 'loginandregister':
-             include "includes/login-register.php"; 
+		if(!isset($_SESSION['ID'])){
+             include "includes/login-register.php";
+		}
+		else {
+			include "includes/profile.php";
+		}
             break;
         case 'propertyadvertise':
              include "includes/propertyadvertise.php"; 
