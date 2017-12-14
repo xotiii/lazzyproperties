@@ -195,7 +195,8 @@
       
 
       <div class="col-md-12">
-        <form action="form.php" class="contact-form" method="post">
+        <form action="" class="contact-form" method="post">
+			<?php contact_seller();?>
             <div id="cont-mess"><h4><strong> <span class="glyphicon glyphicon-envelope"></span> Contact this Seller</strong></h4> </div>
             <h4></h4>
             <div class="form-group">
@@ -211,9 +212,9 @@
                <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
           </div>
           <div class="form-group">
-          <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Send a Message..." required=""></textarea>
+          <textarea class="form-control textarea-contact" rows="5" id="message" name="FB" placeholder="Send a Message..." required=""></textarea>
           <br>
-            <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
+            <button class="btn btn-default btn-send" type="submit" name="contact_seller"> <span class="glyphicon glyphicon-send"></span> Send </button>
           </div>
         </form>
       </div>
