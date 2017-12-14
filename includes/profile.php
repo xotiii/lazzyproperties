@@ -269,6 +269,20 @@
                           <div class="col-xs-4">
                              <label for="Mobile"><h4>Mobile</h4></label>
                               <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" value="<?php profile_settings("mobile");?>" title="enter your mobile number if any.">
+
+                              </br>
+                                  <p style="font-style: 10px" class="custom-control custom-radio">
+  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Show Mobile Number</span>
+</p>
+    <p style="font-style: 10px" class="custom-control custom-radio">
+      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Don't Show Mobile Number</span>
+    </p>
+                              
+
                           </div>
                       </div>
                       <div class="form-group">
