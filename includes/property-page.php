@@ -12,8 +12,8 @@
         <!-- End page header -->
 
         <!-- property area -->
-        <!--<div class="content-area single-property" style="background-color: #FCFCFC;">&nbsp;
-            <div class="container">   -->
+        <!--<div class="content-area single-property" style="background-color: #FCFCFC;">&nbsp;-->
+            <!--<div class="container">
 				<?php echo property_page();?>
                 <!--<div class="clearfix padding-top-40" >
 
@@ -195,6 +195,7 @@
 
                                     </div>
                                 </div>
+								
                             </div>
 
                                                  

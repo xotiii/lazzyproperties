@@ -898,6 +898,8 @@ function property_page(){
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
 			$m = "'map'";
+			$user_type='';
+			$user_contact='';
 			$results = $stmt->fetchAll();
 			$link = 'index.php?source=property-page';
 			$link1 ='index.php?source=profile-view&User_ID=';
@@ -924,6 +926,18 @@ function property_page(){
 				}
 				if(htmlentities($row['User_ID'])==$uID){
 					$link1='index.php?source=profile&User_ID=';
+				}
+				if(htmlentities($row['User_Type'])=='a'){
+					$user_type='Real Estate Agent';
+				}
+				else if(htmlentities($row['User_Type'])=='b'){
+					$user_type='Property Owner';
+				}
+				if(htmlentities($row['Hide'])==1){
+					$user_contact='';
+				}
+				else{
+					$user_contact='<li><i class="pe-7s-call strong"> </i> '.htmlentities($row['Mobile']).'</li>';
 				}
 				
 				
@@ -1110,8 +1124,8 @@ function property_page(){
                                             </div>
                                             <div class="col-xs-8 col-sm-8 ">
                                                 <h3 class="dealer-name">
-                                                    <a href="">'.htmlentities($row['First_Name']) . ' ' . htmlentities($row['Last_Name']).'</a><br/>
-                                                    <span>Real Estate Agent</span>        
+                                                    <a href="'.$link1.htmlentities($row['User_ID']).'">'.htmlentities($row['First_Name']) . ' ' . htmlentities($row['Last_Name']).'</a><br/>
+                                                    <span>'.$user_type.'</span>        
                                                 </h3>
                                                 <div class="dealer-social-media">
                                                     <a class="twitter" target="_blank" href="">
@@ -1135,12 +1149,15 @@ function property_page(){
                                         </div>
 
                                         <div class="clear">
+											
                                             <ul class="dealer-contacts">                                       
                                                 <!--<li><i class="pe-7s-map-marker strong"> </i> 9089 your adress her</li>-->
                                                 <li><i class="pe-7s-mail strong"> </i> '.htmlentities($row['Email']).'</li>
-                                                <li><i class="pe-7s-call strong"> </i> '.htmlentities($row['Mobile']).'</li>
+                                                '.$user_contact.'
                                             </ul>
-                                            <!--<p>Duis mollis  blandit tempus porttitor curabiturDuis mollis  blandit tempus porttitor curabitur , est non…</p>-->
+											<br/>
+											
+                                            <p>'.nl2br(htmlentities($row['Bio'])).'</p>
                                         </div>
 
                                     </div>

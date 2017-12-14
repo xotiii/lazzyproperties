@@ -853,16 +853,18 @@ position: fixed;
     transition: all 0.4s ease;
 }
 .nav-button.login{
-    background-color: #e74c3c;
-    background-repeat: no-repeat;
+    background-color: Transparent;
+    background-repeat:no-repeat;
     border: none;
-    cursor: pointer;
-    FONT-SIZE: 20px;
-    WIDTH: 200PX;
+    cursor:pointer;
     overflow: hidden;
-    outline: none;
-    margin-right: 20px;
+    outline:none;
+  
+    margin-right: 150px;
+    margin-top: -5px;
+
     border-radius: 3px;
+    padding: 5px;
     
     
 }
@@ -1142,7 +1144,7 @@ position: fixed;
 
 .slider-area{
     position: relative;
-    height: 795px;
+    height: 700px;
     margin-bottom: -180px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/bgimage.jpg');
     background-attachment: fixed;
@@ -2239,14 +2241,14 @@ single property page
 }
 
 .sidebar-property{
-    background-color:#EEE;
+ 
     padding: 15px 25px 25px;
 }
 .dealer-widget {
-    background-color: #838383;
+    background-color: #e74c3c;
     padding: 15px;
     color:#FFF;
-    padding-bottom: 20px;
+    padding-bottom: 321px;
     margin: -15px -15px 25px;
 }
 .dealer-name{
@@ -2254,7 +2256,7 @@ single property page
     margin-bottom: 5px;
 }
 .dealer-name a {
-    color: #626262;
+    color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -2271,7 +2273,7 @@ single property page
     border: 2px solid #FFF;
 }
 .dealer-social-media a{
-    color: #969696;
+    color: white;
     margin: 5px;
 }
 .dealer-contacts{
@@ -2279,7 +2281,7 @@ single property page
     padding: 30px 0px 0px 10px;
 }
 .dealer-contacts li i{
-    color: black;
+    color: white;
     padding-right: 8px;
 }
 .clear{ 
@@ -4252,3 +4254,15 @@ box-shadow: 0px 2px 63px -13px rgba(0,0,0,0.36);
 .profile.is-dragover .message.is-wrong-image-size {
   display: none;
 }
+
+#cont-mess span{
+
+   font-size: 19px;
+}
+
+#cont-mess a{
+    color: black;
+   font-size: 19px;
+
+}
+
