@@ -426,7 +426,7 @@ function property_list() {
 					$query .=' AND BED='.$bed;
 				}
 			}
-			$query .= " ORDER BY `Property_ID` DESC  ";
+			$query .= " ORDER BY `Property_ID` DESC LIMIT 2 ";
 			$stmt = $dbh->prepare($query);
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
@@ -2016,8 +2016,8 @@ function change_pass(){
 function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
-		ini_set("SMTP","mail.lazzyproperty.com");
-		$to      = 'xoti.chua@gmail.com';
+		
+		$to      = 'nobody@example.com';
 		$subject = 'the subject';
 		$message = 'hello';
 		$headers = 'From: noreply@lazzyproperty.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
