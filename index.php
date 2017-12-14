@@ -96,10 +96,13 @@ session_start();?>
 		case 'change-pass-success';
 			include "includes/change-pass-success.php";
 			break;
+        case 'forsellsearch';
+            include "includes/forsellsearch.php";
+            break;
 
           
         default:
-            include "includes/homepage-search.php";
+            include "includes/homepage.php";
              
              include "includes/homepage-countarea.php"; 
              include "includes/homepage-buyandsell.php";

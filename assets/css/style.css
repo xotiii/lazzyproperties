@@ -853,18 +853,16 @@ position: fixed;
     transition: all 0.4s ease;
 }
 .nav-button.login{
-    background-color: Transparent;
-    background-repeat:no-repeat;
+    background-color: #e74c3c;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
+    FONT-SIZE: 20px;
+    WIDTH: 200PX;
     overflow: hidden;
-    outline:none;
-  
-    margin-right: 150px;
-    margin-top: -5px;
-
+    outline: none;
+    margin-right: 20px;
     border-radius: 3px;
-    padding: 5px;
     
     
 }
@@ -1144,7 +1142,7 @@ position: fixed;
 
 .slider-area{
     position: relative;
-    height: 700px;
+    height: 795px;
     margin-bottom: -180px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/bgimage.jpg');
     background-attachment: fixed;
