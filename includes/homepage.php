@@ -153,7 +153,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
           <div class="button">
             <button class="navbar-btn nav-button wow bounceInRight login .nav-button.login" data-target="#myModal" data-toggle="modal" type="button">FOR SALE</button>
-            <button class="navbar-btn nav-button wow bounceInRight login .nav-button.login" data-target="#myModal1" data-toggle="modal" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOR RENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <button class="navbar-btn nav-button wow bounceInRight login .nav-button.login" data-target="#myModal" data-toggle="modal" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOR RENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
           
           </div>
               <div class="modal fade" id="myModal" role="dialog">
@@ -560,3 +560,10 @@
   </div>
 </div>
 </div>
+
+<script type="text/javascript">
+  
+$('#myModal').appendTo("body").modal('show');
+$('#myModal1').appendTo("body").modal('show');
+
+</script>

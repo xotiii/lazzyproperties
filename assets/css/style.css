@@ -1147,12 +1147,13 @@ position: fixed;
 
 #content .container {
 
-position: absolute ;
-    height: 610px;
+position: fixed;
+    height: 100%;
     overflow: hidden; 
     width: 100%;
 
-     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/bgimage.jpg') no-repeat center center fixed;background-attachment: fixed;
+     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/bgimage.jpg') no-repeat center center fixed;
+     background-attachment: fixed;
        -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size:cover;
