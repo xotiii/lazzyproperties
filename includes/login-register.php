@@ -42,9 +42,9 @@
 <div class="form-group">
     <div>
   <label for="">Select a User Type</label>
-      <select id="" class="form-control">
-        <option>Property Owner</option>
-        <option>Real Estate Agent</option>
+      <select id="" name="reg_user_type" class="form-control">
+        <option value="a">Property Owner</option>
+        <option value="b">Real Estate Agent</option>
       </select>
     </div>
 </div>
@@ -66,20 +66,14 @@
     <label for="Mobile">Mobile Number *</label>
     <input type="number"  id="reg-mobile" data-parsley-pattern="(\+?\d{2}?\s?\d{3}\s?\d{3}\s?\d{4})|([0]\d{3}\s?\d{3}\s?\d{4})"  data-parsley-type="number" data-parsley-validate-if-empty data-parsley-minlength="11" data-parsley-maxlength="11" required class="form-control" name="reg_mobile" placeholder="Mobile Number">
 </div>
-
-<div class="form-group">
-    <label for="Mobile">Mobile Number *</label>
-    <input type="number"  id="reg-mobile" data-parsley-pattern="(\+?\d{2}?\s?\d{3}\s?\d{3}\s?\d{4})|([0]\d{3}\s?\d{3}\s?\d{4})"  data-parsley-type="number" data-parsley-validate-if-empty data-parsley-minlength="11" data-parsley-maxlength="11" required class="form-control" name="reg_mobile" placeholder="Mobile Number">
-</div>
-
 <div id="radio-c" class="form-group">
     <p style="font-style: 10px" class="custom-control custom-radio">
-  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+  <input id="radio1" name="reg_hide" type="radio" class="custom-control-input" value="0">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Show Mobile Number</span>
 </p>
 <p style="font-style: 10px" class="custom-control custom-radio">
-  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+  <input id="radio2" name="reg_hide" type="radio" class="custom-control-input" value="1">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Don't Show Mobile Number</span>
 </p>

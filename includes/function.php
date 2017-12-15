@@ -33,16 +33,20 @@ function reg_user()
 			{				
 				try{
 					//Insert User Details
-					$stmt = $dbh->prepare("INSERT INTO User (email, first_name, last_name, password) 
-											VALUES (:email, :firstname, :lastname, :password)");
+					$stmt = $dbh->prepare("INSERT INTO User (email, User_Type, first_name, last_name, password, Hide) 
+											VALUES (:email, :user_type, :firstname, :lastname, :password, :hide)");
 					$stmt->bindParam(':email', $email);
+					$stmt->bindParam(':user_type', $user_type);
 					$stmt->bindParam(':firstname', $firstname);
 					$stmt->bindParam(':lastname', $lastname);
 					$stmt->bindParam(':password', $password);
+					$stmt->bindParam(':hide', $hide);
 					$email=$_POST['reg_email'];
+					$user_type=$_POST['reg_user_type'];
 					$lastname=$_POST['reg_lname'];
 					$firstname=$_POST['reg_fname'];
 					$password=$_POST['reg_password'];
+					$hide=$_POST['reg_hide'];
 					$stmt->execute();
 					//Check last ID
 					$stmt = $dbh->prepare("SELECT LAST_INSERT_ID() FROM User");
@@ -1402,16 +1406,18 @@ function save_info(){
 
 			
 			//Select User With Same Email && Pass
-			$stmt = $dbh->prepare("UPDATE User SET Email=:email, First_Name=:fname, Last_Name=:lname, Bio=:bio WHERE User_ID=:User_ID");
+			$stmt = $dbh->prepare("UPDATE User SET Email=:email, First_Name=:fname, Last_Name=:lname, Bio=:bio, Hide=:hide WHERE User_ID=:User_ID");
 			$stmt->bindParam(':User_ID', $ID);
 			$stmt->bindParam(':email', $email);
 			$stmt->bindParam(':fname', $fname);
 			$stmt->bindParam(':lname', $lname);
 			$stmt->bindParam(':bio', $bio);
+			$stmt->bindParam(':hide', $hide);
 			$email = $_POST['email'];
 			$fname = $_POST['first_name'];
 			$lname = $_POST['last_name'];
 			$bio = htmlentities($_POST['bio'], ENT_QUOTES, 'UTF-8');
+			$hide = $_POST['hide'];
 			$stmt->execute();
 			$stmt = $dbh->prepare("UPDATE User_Contact SET Email=:email, Mobile=:mobile WHERE User_ID=:User_ID");
 			$stmt->bindParam(':email', $email);

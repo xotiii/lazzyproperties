@@ -272,12 +272,12 @@
 
                               </br>
                                   <p style="font-style: 10px" class="custom-control custom-radio">
-  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+  <input id="radio1" name="hide" type="radio" class="custom-control-input" value="0">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Show Mobile Number</span>
 </p>
     <p style="font-style: 10px" class="custom-control custom-radio">
-      <input id="radio2" name="radio" type="radio" class="custom-control-input">
+      <input id="radio2" name="hide" type="radio" class="custom-control-input" value="1">
       <span class="custom-control-indicator"></span>
       <span class="custom-control-description">Don't Show Mobile Number</span>
     </p>
