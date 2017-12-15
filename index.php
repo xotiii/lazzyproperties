@@ -44,6 +44,9 @@ session_start();?>
         case 'viewnews2':
              include "includes/viewnews2.php"; 
             break;
+         case 'guide':
+             include "includes/guide.php"; 
+            break;   
         case 'agsatbrkr':
              include "includes/agencyandbroker.php"; 
             break;
