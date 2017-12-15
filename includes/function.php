@@ -362,8 +362,15 @@ function property_list() {
 	else {
 		$bed="";
 	}
-	
-	
+	if(isset($_GET['filter']))
+	{
+		$filter=$_GET['filter'];
+		
+	}
+	else
+	{
+		$filter="";
+	}
 	
 	
 	
@@ -430,7 +437,32 @@ function property_list() {
 					$query .=' AND BED='.$bed;
 				}
 			}
-			$query .= " ORDER BY `Property_ID` DESC  ";
+			if(!$filter=='')
+			{
+					if($filter=='cheapest' || $filter=='expensive')
+					{
+						if($filter=='cheapest')
+						{
+							$query .= " ORDER BY `Price` ASC";
+						}
+						else
+						{
+							$query .= " ORDER BY `Price` DESC";
+						}
+					}
+					else
+					{
+						if($filter=='asc')
+						{
+							$query .= " ORDER BY `Property_ID` ASC";
+						}
+						else
+						{
+							$query .= " ORDER BY `Property_ID` ASC";
+						}
+					}
+		    }
+			
 			$stmt = $dbh->prepare($query);
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
