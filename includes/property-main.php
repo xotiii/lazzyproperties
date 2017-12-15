@@ -397,7 +397,7 @@ function reply_click(clicked_id)
                                     
                                    <!--/ .sel-->
                                 </div><!--/ .items-per-page-->
-                            </div>
+                            
                         </form>
                       <script type="text/javascript">
                               
@@ -405,7 +405,7 @@ function reply_click(clicked_id)
                                     $("#filter").change(function(){
                                         
                                         var typevalue=$("#filter").val();
-                                        var myURL = document.location;
+                                        // var myURL = document.location;
                                         //     myURL=  myURL.replace('&filter=cheapest', " ");
                                         //     myURL = myURL.replace('&filter=expensive', " ");
                                         //     myURL = myURL.replace('&filter=asc', " ");
@@ -651,13 +651,13 @@ function reply_click(clicked_id)
 <script type="text/javascript">
   
 $( document ).ready(function () {
-  $(".smoreBox").slice(0, 12).show();
+  $(".smoreBox").slice(0, 9).show();
     if ($(".sblogBox:hidden").length != 0) {
       $("#sloadMore").show();
     }   
     $("#sloadMore").on('click', function (e) {
       e.preventDefault();
-      $(".smoreBox:hidden").slice(0, 12).slideDown();
+      $(".smoreBox:hidden").slice(0, 9).slideDown();
       if ($(".smoreBox:hidden").length == 0) {
         $("#sloadMore").fadeOut('slow');
       }
