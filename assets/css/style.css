@@ -1863,6 +1863,8 @@ proerty-th
 .proerty-th .proerty-item{
     background-color: #FFF; 
     margin: 10px;
+    height: 550px;
+
 }
 .proerty-th .proerty-item .item-thumb{
     position: relative;
@@ -1900,7 +1902,7 @@ proerty-th
     position: relative;
 }
 .proerty-th .proerty-item  .item-entry h5::after {
-    background: transparent url("../../assets/img/chevron-down.png") no-repeat scroll center center;
+    
     width: 15px;
     left: 20px;
     height: 7px;
