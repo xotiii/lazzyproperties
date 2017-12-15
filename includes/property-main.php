@@ -377,7 +377,7 @@ function reply_click(clicked_id)
                         </div>
 						            
                         <form id="form" action="" method="GET" class="form-inline" onchange="getHouseModel">
-                                 <!--<div class="form-group">
+                                 <div class="form-group">
                                       <select id="filter" class="selectpicker form-control" name="filter" title="Filter By">
                                                   <option value="cheapest">
                                                       Cheapest First
@@ -392,7 +392,7 @@ function reply_click(clicked_id)
                                                       Date Posted Descending
                                                   </option>
                                         </select>
-                                  </div>--><!--/ .sort-by-list-->
+                                  </div><!--/ .sort-by-list-->
                                 <div class="items-per-page">
                                     
                                    <!--/ .sel-->
