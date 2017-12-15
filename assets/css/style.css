@@ -2255,14 +2255,16 @@ single property page
 }
 
 .sidebar-property{
-    background-color:#EEE;
-    padding: 15px 25px 25px;
+ /*   background-color:#EEE;
+    padding: 15px 25px 25px;*/
 }
 .dealer-widget {
-    background-color: #838383;
+    background-color: #e74c3c;
     padding: 15px;
-    color:#FFF;
-    padding-bottom: 20px;
+    color: #FFF;
+    overflow-y: scroll;
+    height: 534px;
+    padding-bottom: 31px;
     margin: -15px -15px 25px;
 }
 .dealer-name{
