@@ -651,13 +651,13 @@ function reply_click(clicked_id)
 <script type="text/javascript">
   
 $( document ).ready(function () {
-  $(".smoreBox").slice(0, 9).show();
+  $(".smoreBox").slice(0, 12).show();
     if ($(".sblogBox:hidden").length != 0) {
       $("#sloadMore").show();
     }   
     $("#sloadMore").on('click', function (e) {
       e.preventDefault();
-      $(".smoreBox:hidden").slice(0, 9).slideDown();
+      $(".smoreBox:hidden").slice(0, 12).slideDown();
       if ($(".smoreBox:hidden").length == 0) {
         $("#sloadMore").fadeOut('slow');
       }

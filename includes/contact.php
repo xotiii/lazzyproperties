@@ -71,7 +71,6 @@
       </div>
     </div>
   </div>
-
  
        
     
@@ -80,6 +79,69 @@
     <!--My Portfolio  dont Copy this -->
       
   </div>
+</div>
+
+ <div class="container second-portion">
+    <div class="row">
+        <!-- Boxes de Acoes -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon animated fadeInDown">
+                    <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">MAIL & WEBSITE</h3>
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp support@lazzysupport.com
+                            <br>
+                            <br>
+                            <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.lazzyproperty.com
+                        </p>
+                    
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+            
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon">
+                    <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">CONTACT</h3>
+                        <p>
+                            <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+852) 
+                            <br>
+                            <br>
+                            <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+86) 
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+            
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon">
+                    <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">ADDRESS</h3>
+                        <p>
+                            
+                              <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Room 02 , 20 Floor, Wan Chai Commercial Centre, Johnston Road, Wan Chai, Hong Kong.
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+
+            </div> 
+        </div>          
+        <!-- /Boxes de Acoes -->
+        
+        <!--My Portfolio  dont Copy this -->
+        
+    </div>
 </div>
 
 </div>
