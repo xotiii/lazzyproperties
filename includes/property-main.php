@@ -160,24 +160,8 @@ function reply_click(clicked_id)
                 <div class="row">
                     <div class="col-md-12 clear"> 
                         <div class="col-xs-10 page-subheader sorting pl0">
-                            <ul class="sort-by-list">
-                                <li class="active" id="sort_date" onclick="reply_click(this.id)">
-                                    <a href="javascript:void(0);" class="order_by_date" data-orderby="property_date" data-order="ASC">
-                                        Property Date <i class="fa fa-sort-amount-asc"></i>					
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="javascript:void(0);" class="order_by_price" data-orderby="property_price" data-order="DESC">
-                                        Property Price <i class="fa fa-sort-numeric-desc"></i>						
-                                    </a>
-                                </li>
-                            </ul><!--/ .sort-by-list-->
+                            
 
-                            <div class="items-per-page">
-                                
-                               <!--/ .sel-->
-                            </div><!--/ .items-per-page-->
-                        </div>
 
                         <!--/ .layout-switcher-->
                     </div>
@@ -202,6 +186,8 @@ function reply_click(clicked_id)
                                           </ul>
                                           <div class="tab-content">
                                             <div class="tab-pane active" id="sale">
+                                              
+
                                               <form action="" class="form-inline">
                                                 <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forsale">
                                                 <div class="form-group">
@@ -376,6 +362,10 @@ function reply_click(clicked_id)
                                                   </div>
                                                 </div><button class="btn search-btn prop-btm-search" type="submit"><i class="fa fa-search"></i></button>
                                               </form>
+
+                                          <!-- End of  Smart Search Form -->
+
+
                                             </div>
                                           </div><!-- End of  --><!-- End of  -->
                                         </div>
@@ -385,7 +375,48 @@ function reply_click(clicked_id)
                                 </div>
                             </center>
                         </div>
-						
+						            
+                        <form id="form" action="" method="GET" class="form-inline" onchange="getHouseModel">
+                                 <div class="form-group">
+                                      <select id="filter" class="selectpicker form-control" name="filter" title="Filter By">
+                                                  <option value="cheapest">
+                                                      Cheapest First
+                                                  </option>
+                                                  <option value="expensive">
+                                                      Expensive First
+                                                  </option>
+                                                  <option value="asc">
+                                                      Date Posted Ascending
+                                                  </option>
+                                                   <option value="desc">
+                                                      Date Posted Descending
+                                                  </option>
+                                        </select>
+                                  </div><!--/ .sort-by-list-->
+                                <div class="items-per-page">
+                                    
+                                   <!--/ .sel-->
+                                </div><!--/ .items-per-page-->
+                            </div>
+                        </form>
+                      <script type="text/javascript">
+                              
+                                $(document).ready(function(){
+                                    $("#filter").change(function(){
+                                        
+                                        var typevalue=$("#filter").val();
+                                        var myURL = document.location;
+                                        //     myURL=  myURL.replace('&filter=cheapest', " ");
+                                        //     myURL = myURL.replace('&filter=expensive', " ");
+                                        //     myURL = myURL.replace('&filter=asc', " ");
+                                        //     myURL = myURL.replace('&filter=desc', " ");
+                                        document.location = myURL +"&filter="+typevalue;
+                                                      
+                                    });
+                                });
+                            </script>
+                       
+
 								<?php echo property_list();?>
 								<!--<div class="col-sm-6 col-md-4 p0">
                                     <div class="box-two proerty-item">

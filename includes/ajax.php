@@ -250,7 +250,7 @@ $uploadImages = new uploadImages();
 						$filename = explode(".", $image["name"]);
 						$key = end($filename);
 						/* save the image */
-						if ($uploadImages->saveImage($image["tmp_name"], $path."/", $i.".".end($filename)))
+						if ($uploadImages->saveImage($image["tmp_name"], $path."/", $i.".jpg"))
 						{
 							print ("<p class='text-success'>· <strong>" . $image["name"] . "</strong> saved in images folder</p>");
 						}
@@ -271,7 +271,7 @@ $uploadImages = new uploadImages();
 			{
 				print("<p class='text-danger'>images required</p>");
 			}
-			echo "<script> location.href = 'index.php?source=property-success'; </script>";
+			echo "<script> location.href = 'index.php?source=property-success&propId=".$result."'; </script>";
 		}
 		catch(PDOException $e){
 			echo "<script> location.href = 'index.php' </script>";
