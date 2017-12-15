@@ -8,7 +8,7 @@
       			<p><span class="glyphicon glyphicon-ok-circle"></span><br></br>Your Property Has successfully Posted </p> 
       			
 
-            <button class="btn btn-primary btn-lg outline center-block">View now!</button>
+            <button class="btn btn-primary btn-lg outline center-block" onclick="location.href='index.php?source=property-page&propId=<?php echo $_GET['propId']?>'" >View now!</button>
 
 
       			</div>

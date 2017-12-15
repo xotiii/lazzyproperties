@@ -10,42 +10,54 @@
 
 <div id="info" class="col-sm-12">
 <div class="col-sm-4">
- <div class="text-center"> <span id="comment-i" class="glyphicon glyphicon-comment"></span></div>
-  <p  class="text-center talk">Talk to us</p>
-<div id="talk""></div>
-
-<p class="text-left">Your opinion is very important to us. We appreciate your feedback and will use it to evaluate changes and make improvements in our site. </p></div>
-
-
-
-<div class="col-sm-4">
-  <div class="text-center"> <span id="feed" class="glyphicon glyphicon-comment"></span></div>
-  <p  class="text-center talk">Give us Feedback!</p>
-<div id="talk""></div>
-
-<p class="text-left">Your opinion is very important to us. We appreciate your feedback and will use it to evaluate changes and make improvements in our site. </p></div>
+<br>
+ <div class="text-center"><img src="includes/images/lazzy.png" style="width:150px; height:70px ;"></div>
+  <p  class="text-center talk"></p>
+  <div id="talk"></div>
+  <p class="text-left">We are lazzy, we work very hard to make sure you can post your property easily in just a minute.</p></div>
+  
 
 
 
 <div class="col-sm-4">
-  <div class="text-center"> <span id="lost" class="glyphicon glyphicon-comment"></span></div>
-  <p  class="text-center talk">Lost?</p>
-<div id="talk""></div>
-
-<p class="text-left">Your opinion is very important to us. We appreciate your feedback and will use it to evaluate changes and make improvements in our site. </p></div>
-
+  <div class="text-center"><img src="includes/images/free.png" style="width:120px; height:100px ;"></div>
+  <p  class="text-center talk"></p>
+<div id="talk"></div>
+<p class="text-left">Our website is 100% free to post anfd always will be. feel free to contact us and advertise your company.</p>
 </div>
 
+
+
+
+
+<div class="col-sm-4">
+    <div class="text-center"><img src="includes/images/support.png" style="width:110px; height:100px ;"></div>
+    <p  class="text-center talk"></p>
+    <div id="talk"></div>
+
+    <p class="text-left">Interested in how Lazzy can support the growth of your business? 
+    We would love to talk to you about how we can support your business in promoting your properties and brand in the property marketplace.
+    </p>
+    <p>
+    If you are setting up a new business or have years of experience behind you we are here and happy to help you.
+    </p>
+    <p>
+    you are welcome to speak with us about how we can support your business:
+    </p>
+    <p>
+    Estate & Lettings Agents
+    New Homes Developers & Housing Associations
+    Agents & Multiple properties Landlords
+    Bank and financing companies
+    </p>
+    <p>
+    Need some help?
+    For anything else please click here
+    </p>
+</div>
 </br>
- 
-
-
-
-
     <div class="col-sm-12" id="parent">
-      <div class="col-sm-6">
-      <iframe scrolling="no" width="100%" height="350px;" frameborder="0" style="border:0" src="https://ak3.picdn.net/shutterstock/videos/12448643/thumb/1.jpg" allowfullscreen></iframe>
-      </div>
+      
 
       <div class="col-sm-6">
         <form action="form.php" class="contact-form" method="post">
@@ -58,7 +70,7 @@
             <div class="form-group form_left">
               <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
             </div>
-        
+          
           <div class="form-group">
                <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
           </div>
