@@ -293,8 +293,7 @@ $( "form" ).submit(function( event ){
 
                                         <option value="a">For Sale</option>
                                         <option value="b">For Rent</option>
-                                        <option value="c">New Home and Development</option>
-                                        <option value="d">Commercial and Land</option>
+                                        
                                         
                                     </select>
                                
