@@ -76,7 +76,7 @@ p {
     margin:0;
 }
 a {
-    color: white;
+    color: black;
     outline: 0;
     font-size: 12px; 
     -webkit-transition: all .8s ease;
@@ -87,6 +87,7 @@ a:hover {
     color: white;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
+
 }
 a:focus {
     color: #999696;
@@ -1184,7 +1185,7 @@ position: fixed;
     font-size: 40px; 
     margin-bottom: 20px;
     margin-top: -30px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: font-family: 'Akrobat Bold';
     text-transform: uppercase;
     color: white;
     font-weight: 500;
@@ -3803,11 +3804,11 @@ box-shadow: 0px 2px 63px -13px rgba(0,0,0,0.36);
 }
 
 #p-acc{
+
     float: right;
-    margin-top: 10px;
-    margin-right: -50px;
+   color: white;
+    margin-top: 0px;
     font-size: 14px;
-    list-style-type: none;
 }
 
 #p-acc a span{
@@ -4268,31 +4269,4 @@ box-shadow: 0px 2px 63px -13px rgba(0,0,0,0.36);
 .profile.is-dragover .message.is-wrong-file-type,
 .profile.is-dragover .message.is-wrong-image-size {
   display: none;
-}
-.translator{
-  right: 1%;
-    top: 1px;
-    position: absolute;
-}
-.wilsontable{ 
-    border-collapse: collapse; 
-}
-.wilsontr{ 
-    border: none; 
-}
-.wilsontr :hover{ 
-    border: none; 
-    background: #33aabb;
-}
-td {
-  border-top: solid 1px ; 
-  border-bottom: solid 1px ;
-}
-td :hover{
-  
-}
-.divider {
-  border-top: solid 1px #1a1a1a;
-  height: 1px;
-  width: 100%;
 }
