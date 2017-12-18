@@ -223,7 +223,7 @@
               <div class="sectionContent">
                 <article>
                   
-                      <h2><?php echo if(htmlentities($row['Hide']=="1")){htmlentities($row['Email']);}else{echo "N/A";} ?></h2> <p class="subDetails">Email</p>
+                      <h2><?php  if(htmlentities($row['Hide']=="1")){htmlentities($row['Email']);}else{echo "N/A";} ?></h2> <p class="subDetails">Email</p>
                 </article>
                   <article>
             

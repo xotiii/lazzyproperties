@@ -175,7 +175,7 @@ function reply_click(clicked_id)
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <button class="close" data-dismiss="modal" type="button">&times;</button>
-                                      <h1 class="modal-title">For Sale</h1>
+                                      <h1 class="modal-title"><?php if($_GET['type']=='forsale'){ echo 'For Sale';}else if($_GET['type']=='forrent'){echo 'For Rent';}?></h1>
                                     </div>
                                     <div class="modal-body">
                                       <!-- -->

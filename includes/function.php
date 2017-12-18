@@ -682,6 +682,7 @@ function property_list() {
 				$desc = htmlentities($row['Description']);
 				
 				
+				
 				echo'
 				<div class="sblogBox smoreBox" style="display: none;">
 				<div class="col-sm-6 col-md-4 p0">
@@ -977,6 +978,12 @@ function property_page(){
 				else{
 					$user_contact='<li><i class="pe-7s-call strong"> </i> '.htmlentities($row['Mobile']).'</li>';
 				}
+				$profpic=htmlentities($row['User_ID']);
+				$path='images/prop/'.htmlentities($row['User_ID']);
+					if (!is_dir($path)) {
+						$profpic='default';
+					}
+				
 				
 				
 					
@@ -1157,7 +1164,7 @@ function property_page(){
                                         <div class="clear">
                                             <div class="col-xs-4 col-sm-4 dealer-face">
                                                 <a href="'.$link1.htmlentities($row['User_ID']).'">
-                                                    <img src="includes/images/user/'.htmlentities($row['User_ID']).'/1.jpg" class="img-circle">
+                                                    <img src="includes/images/user/'.$profpic.'/1.jpg" class="img-circle">
                                                 </a>
                                             </div>
                                             <div class="col-xs-8 col-sm-8 ">
@@ -1316,11 +1323,21 @@ function profile(){
 			$results = $stmt->fetchAll();
 			$link = 'index.php?source=profile';
 			foreach($results as $row) {
+				$profpic=htmlentities($row['User_ID']);
+				$path='images/user/'.htmlentities($row['User_ID']);
+				if (!is_dir($path)) {
+					$profpic='default';
+				}
 				
 				
 				
 				
 				echo'
+				
+				<div class="panel panel-default">
+					<img src="includes/images/user/'.$profpic.'/1.jpg" width="100px" height="100px" class="img-circle">
+				</div>
+				
 				<ul class="list-group">
 					<li class="list-group-item text-muted">Profile</li>
 					<li class="list-group-item text-right"><span class="pull-left"><strong>First Name</strong></span> ' . htmlentities($row['First_Name']) . '</li>
