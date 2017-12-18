@@ -13,8 +13,11 @@
 <br>
  <div class="text-center"><img src="includes/images/lazzy.png" style="width:150px; height:70px ;"></div>
   <p  class="text-center talk"></p>
-  <div id="talk"></div>
-  <p class="text-left">We are lazzy, we work very hard to make sure you can post your property easily in just a minute.</p></div>
+  <div id="talk"><h3><b>Lazzy</b></h3></div>
+  <p class="text-left">We are lazzy, we work very hard to make sure you can post your property easily in just a minute.</p>
+  <p class="text-justify">Interested in how Lazzy can support the growth of your business? 
+    We would love to talk to you about how we can support your business in promoting your properties and brand in the property marketplace.
+    </p></div>
   
 
 
@@ -22,8 +25,8 @@
 <div class="col-sm-4">
   <div class="text-center"><img src="includes/images/free.png" style="width:120px; height:100px ;"></div>
   <p  class="text-center talk"></p>
-<div id="talk"></div>
-<p class="text-left">Our website is 100% free to post anfd always will be. feel free to contact us and advertise your company.</p>
+<div id="talk"><h3><b>Free</b></h3></div>
+<p class="text-left">Our website is 100% free to post and always will be. Feel free to contact us and advertise your company.</p>
 </div>
 
 
@@ -33,31 +36,40 @@
 <div class="col-sm-4">
     <div class="text-center"><img src="includes/images/support.png" style="width:110px; height:100px ;"></div>
     <p  class="text-center talk"></p>
-    <div id="talk"></div>
+    <div id="talk"><h3><b>Business Support</b></h3></div>
 
-    <p class="text-left">Interested in how Lazzy can support the growth of your business? 
-    We would love to talk to you about how we can support your business in promoting your properties and brand in the property marketplace.
-    </p>
+    
     <p>
     If you are setting up a new business or have years of experience behind you we are here and happy to help you.
     </p>
-    <p>
-    you are welcome to speak with us about how we can support your business:
-    </p>
-    <p>
+    <p>You are welcome to speak with us about how we can support your business:
+    <ul>
+    <i>
+    <li>
     Estate & Lettings Agents
+    </li>
+    <li>
     New Homes Developers & Housing Associations
+    </li>
+    <li>
     Agents & Multiple properties Landlords
+    </li>
+    <li>
     Bank and financing companies
+    </li>  
+    </i> 
+    </ul>
     </p>
     <p>
     Need some help?
-    For anything else please click here
+    For anything else please Contact us
     </p>
 </div>
 </br>
     <div class="col-sm-12" id="parent">
       
+      <div class="col-sm-6">
+      </div>
 
       <div class="col-sm-6">
         <form action="form.php" class="contact-form" method="post">
