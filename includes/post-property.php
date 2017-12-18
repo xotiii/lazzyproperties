@@ -281,11 +281,11 @@ $( "form" ).submit(function( event ){
 
 <div class="form-group">
     <label for="Lastname">Title</label>
-    <input type="text" data-parsley-validate-if-empty required class="form-control" name="post_title" placeholder="Title">
+    <input type="text" data-parsley-validate-if-empty  required class="form-control" name="post_title" placeholder="Title">
 </div>
 <div class="form-group">
     <label for="Firstname">Price</label>
-    <input type="number"  data-parsley-validate-if-empty required class="form-control" name="post_price" placeholder="&#8369 Price">
+    <input type="number"  data-parsley-validate-if-empty data-parsley-pattern="^[0-9]+$"  data-parsley-type="digits" required class="form-control" name="post_price" placeholder="&#8369 Price">
 </div>
 <div class="form-group">
     <label for="Firstname">Type</label>
@@ -394,37 +394,37 @@ $( "form" ).submit(function( event ){
    <div class="row">
         <div class="col-xs-6 form-group">
             <label>Stories</label>
-            <input class="form-control" data-parsley-validate-if-empty type="number" placeholder="No. of Stories" name="post_stories"/>
+            <input class="form-control" data-parsley-validate-if-empty type="number" data-parsley-pattern="^[0-9]+$" placeholder="No. of Stories" name="post_stories"/>
         </div>
         <div class="col-xs-6 form-group">
             <label>Bed</label>
-            <input class="form-control" data-parsley-validate-if-empty type="number" placeholder="No. of Bedrooms" name="post_bed"/>
+            <input class="form-control" data-parsley-validate-if-empty type="number" data-parsley-pattern="^[0-9]+$" placeholder="No. of Bedrooms" name="post_bed"/>
         </div>
         <div class="col-xs-6 form-group">
             <label>Baths</label>
-            <input class="form-control" data-parsley-validate-if-empty type="number" placeholder="No. of Bathrooms" name="post_bath"/>
+            <input class="form-control" data-parsley-validate-if-empty type="number" data-parsley-pattern="^[0-9]+$" placeholder="No. of Bathrooms" name="post_bath"/>
         </div>
 
         <div class="col-xs-6 form-group">
             <label>Garage</label>
-            <input class="form-control" data-parsley-validate-if-empty type="number" placeholder="No. of Cars fit in Garage" name="post_garage"/>
+            <input class="form-control" data-parsley-validate-if-empty type="number" data-parsley-pattern="^[0-9]+$" placeholder="No. of Cars fit in Garage" name="post_garage"/>
         </div>
     </div>
 </div>
 <label for="Lastname">Size</label>
 <div class="form-group">
     <label for="Lastname">Land Size</label>
-    <input type="text" required class="form-control" data-parsley-validate-if-empty name="post_land" placeholder="Land Size">
+    <input type="text" required class="form-control" data-parsley-pattern="^[0-9]+$" data-parsley-validate-if-empty name="post_land" placeholder="Land Size">
 </div>
 
 <div class="form-group">
     <label for="Firstname">Floor Size</label>
-    <input type="number" required class="form-control"  data-parsley-validate-if-empty name="post_floor" placeholder="Floor Size">
+    <input type="number" required class="form-control" data-parsley-pattern="^[0-9]+$"  data-parsley-validate-if-empty name="post_floor" placeholder="Floor Size">
 </div>
 
 <div class="text-center">
 	<img id="loadimg" src="img/loading.gif"></img>
-    <button type="submit" id="btn" name="post_submit" data-parsley-validate-if-empty class="btn btn-default" disabled>Post Now!</button>
+    <button type="submit" id="btn" name="post_submit"  data-parsley-validate-if-empty class="btn btn-default" disabled>Post Now!</button>
 </div>
 </form>
 
