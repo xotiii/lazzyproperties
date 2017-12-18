@@ -17,9 +17,7 @@
     </div>
     <div class="row">
         <div class="col-sm-3"><!--left col-->
-              <div class="panel panel-default">
-			<img src="includes/images/user/<?php echo $_SESSION['ID'];?>/1.jpg" width="100px" height="100px" class="img-circle">
-			</div>
+              
            <?php echo profile();?>
                
           <!-- <div class="panel panel-default">
