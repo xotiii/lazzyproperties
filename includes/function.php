@@ -1530,8 +1530,8 @@ function propertylist(){
                       <td>P' . htmlentities($row['Price']) . '</td>
                       <td>'.$status.'</td>
                       <td>' . htmlentities($row['Country']) . '</td>
-                    
-                    </a></tr>';
+                    <td><button type="button" class="btn btn-primary">Edit</button></td>
+                    </a></tr> ';
 				
 			}
 			// Fetch data from query
@@ -1546,6 +1546,75 @@ function propertylist(){
 		}
 
 }
+
+
+
+function propertylistview(){
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	try{
+    $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
+                    $username,
+                    $password);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	}
+	catch(PDOException $ex){
+		echo 'Connection failed: ' . $ex->getmessage();
+	}
+	
+	try{
+			$ID = $_GET['User_ID'];
+
+			$query="SELECT * FROM Property_Page where User_ID =:User_ID ";
+			
+			//Select User With Same Email && Pass
+			$stmt = $dbh->prepare($query);
+			$stmt->bindParam(':User_ID', $ID);
+			$stmt->execute();
+			$count = (int)$stmt->rowCount();
+			$results = $stmt->fetchAll();
+			$link = 'index.php?source=profile';
+			foreach($results as $row) {
+				if($row['Status']=='Active'){
+					$status='Available';
+				}
+				else{
+					$status = $row['Status'];
+				}
+				
+				
+				
+				echo'<tr href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'"><a href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'">
+                      <td><a href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'">' . htmlentities($row['Title']) . '</a></td>
+                      <td>P' . htmlentities($row['Price']) . '</td>
+                      <td>'.$status.'</td>
+                      <td>' . htmlentities($row['Country']) . '</td>
+                    
+                    </a></tr> ';
+				
+			}
+			// Fetch data from query
+			
+			//Start PHP Session
+			//$_SESSION['ID'] = $result->
+			//echo "Log In Successful!";
+			//echo "<script> location.href = 'index.php' </script>";
+		}
+		catch(PDOException $e){
+			echo "Error: " . $e->getMessage();
+		}
+
+}
+
+
+
+
+
+
+
+
+
 
 function prop_list(){
 

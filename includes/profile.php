@@ -67,7 +67,7 @@
                   <tbody id="items">
                    
                  <?php echo propertylist();?>
-
+                  
                   </tbody>
                 </table>
                 <hr>

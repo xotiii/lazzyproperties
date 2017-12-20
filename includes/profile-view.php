@@ -96,7 +96,7 @@
                   </thead>
                   <tbody id="items">
                    
-                 <?php echo propertylist();?>
+                 <?php echo propertylistview();?>
 
                   </tbody>
                 </table>
