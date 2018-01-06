@@ -44,6 +44,15 @@ session_start();?>
         case 'viewnews2':
              include "includes/viewnews2.php"; 
             break;
+        case 'viewnews3':
+             include "includes/viewnews3.php"; 
+            break;
+        case 'viewnews4':
+             include "includes/viewnews4.php"; 
+            break;
+         case 'viewnews5':
+             include "includes/viewnews5.php"; 
+            break;
          case 'guide':
              include "includes/guide.php"; 
             break;   

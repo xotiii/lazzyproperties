@@ -28,51 +28,67 @@
   
         <div class="register-area" style="background-color: rgb(249, 249, 249);">
             <div class="container">
-                 <div class="proerty-th" id="list-type">
-                            <div class="row" id="chckSize">
-                                <div class="proerty-th">
-                                    <table class="display table-condensed table dt-responsive responsive-display">
-                                        <tr>
-                                            <td class='propertyIMG' onclick="window.open('includes/job-page.php?id=&lt;?php echo $result1['j_id']; ?&gt;')" title="Click to View Profile">
-                                                <div style="padding-left: 15px ">
-                                                    <a style="color:black; font-size:35px;" >Singapore's Property Market Is Set to Sizzle</a>
-                                                </div>
-                                                <div>
-                                                    <small><i><b>&nbsp;&nbsp;&nbsp; Date Posted:</b> December 13, 2017</i><b>&nbsp;&nbsp;&nbsp; Author:</b> Jacob Aristain</small>
-                                                </div><br>
-                                                <img alt="" class="img-thumbnail" src="assets/img/news/passport.png" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <!-- <td class='onHover col-md-8' title="Click to View Profile" onclick="window.open('includes/job-page.php?id=<?php echo $result1['j_id'];  ?>')" class='propertyIMG'>
-                               
-                               <img  class="img-thumbnail" src="assets/img/news/qatar_building.png" alt="" />
-                              </td> -->
-                                            <td class='onHover col-md-8'>
-                                                <div style="color: black; padding-left: 15px;">
-                                                    <div>
-                                                        <a style="font-size: 13px; color: black;">A series of blockbuster land deals in Singapore this year signal the city-state’s property market is set to break out of its prolonged slump in 2018.
-
-A Chinese group lobbed a winning record bid for a residential plot, while Guocoland Ltd. paid a record per-square foot price for an office development site in the central business district. Office rents last quarter rose for the first time in 2 1/2 years and home prices ended a four-year slide.
-
-The spending spree may not be over, with more than S$3.3 billion ($2.5 billion) of land deals set to be completed by the end of the year, pushing the annual total to S$14 billion, the highest since 2011, according to Cushman & Wakefield Inc.
-
-“Singapore’s residential and office market has passed its inflection point, embarking on an exciting recovery journey,” said Christine Li, a director of research at Cushman. “With brighter economic prospects and improved market sentiment in the next two to three years, developers are increasingly sourcing land sites to ride the wave of growth for the rest of the decade.”</a>
-                                                    </div><br>
-                                                    
-                                                    <div>
-                                                        <a style="font-size: 13px; color: black;">Singapore in March relaxed some home-buying restrictions, unleashing pent up demand in a market where property ownership as a proportion of household assets is near a record low. Home prices could rise as much as 10 percent next year, according to analysts from Morgan Stanley, BNP Paribas SA and UOB Kay Hian Pte.<br>
-                                                        <br>
-                                                        <div>
-                                                        <a style="font-size: 13px; color: black;">Brokers including Cushman and CBRE Group Inc. predict office rents will climb 7 percent to 9 percent as an oversupply of space eases.The resurgence in deals suggests Singapore is on course to emulate Hong Kong’s red-hot property market, where home values have surged to record highs -- following a jump in land prices last year -- and office towers have fetched eye-popping prices. With housing-affordability much better in Singapore, there may be a surge in demand next year, according to BNP Paribas.</a>
-                                                    </div><br>
-                                                        </a>
+            <div class="col-md-12 clear">
+                <div class="proerty-th" id="list-type">
+                                <div class="row" id="chckSize">
+                                    <div class="proerty-th col-md-8">
+                                        <table class="display table-condensed table dt-responsive responsive-display">
+                                            <tr>
+                                                <td class='propertyIMG' onclick="window.open('includes/job-page.php?id=&lt;?php echo $result1['j_id']; ?&gt;')" title="">
+                                                    <div style="padding-left: 15px">
+                                                        <a style="color:black; font-size:38px; font-weight: bold;" >How to live a Metro-like lifestyle away from the Metro?</a>
                                                     </div>
-                                                    <br>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                                    <div>
+                                                        <small><i><b>&nbsp;&nbsp;&nbsp; Date Posted:</b> October  06, 2017</i><b>&nbsp;&nbsp;&nbsp; Author:</b> </small>
+                                                    </div><br>
+                                                    <img alt="" class="img-thumbnail" src="assets/img/news/urban.jpg" style="height:400px; width: 990px">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <!-- <td class='onHover col-md-8' title="Click to View Profile" onclick="window.open('includes/job-page.php?id=<?php echo $result1['j_id'];  ?>')" class='propertyIMG'>
+                                   
+                                   <img  class="img-thumbnail" src="assets/img/news/qatar_building.png" alt="" />
+                                  </td> -->
+                                                <td class='onHover col-md-8'>
+                                                    <div style="color: black; padding-left: 15px; ">
+                                                        <div>
+                                                        <br>
+                                                            <a style="font-size: 15px; color: black;">To almost everyone living in this ever-growing and fast-paced metro, while seemingly being trapped in the hustle and bustle of the city, fulfilling the dream of living in a quaint and relaxing place may just be out of reach for many. Not to mention the endless responsibilities demanded by work and family, that dream may just be wishful thinking.
+                                                        </a>
+                                                        </div> 
+                                                        <br> 
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Of course, the usual roadtrips during holidays and weekends may just curb that ever-longing thirst of someone to veer away from the stresses of everyday life. Some decide to go to the beach to relive their memorable summers, others go trekking up a mountain as a starting point for a new hobby. For those who cannot just seem to separate the words fun and relaxation, they decide to go to Tagaytay for the cool breeze, coupled with that Starbucks Frappuccino.</a>
+                                                        </div><br>
+                                                        <img alt="" class="img-thumbnail" src="assets/img/news/urban1.jpg" style="height:400px; width: 690px">
+                                                       <br><br>
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Quite a number though simply opt for a staycation in the metro, either in hotels or in their own comfortable abode. However, a comfortable abode might be an understatement for these same people. For them, the question that always pops into their heads is – “Can it ever be possible for me to live in a place where I can combine everything that I want to do? From taking a dip in the pool under the sun whenever I want, to enjoying a cup of coffee that’s just right at night while enjoying the cool breeze; all while living near my home so that I won’t have to worry too much about work the next day.”</a>
+                                                        </div><br>
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Lucky for them, there might be an answer all along. In the booming commercial and residential district of Sta. Rosa, Laguna, there rises vast sanctuaries that provide residents an intimate escape with nature. These are Solen Residences and Pramana Residential Park, Greenfield Development Corporation (GDC)’s subdivision communities designed to nurture growing families against a backdrop of nature-rich sceneries.</a>
+                                                        </div><br>
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Situated within the 400-hectare master-planned township that is Greenfield City – the “city within a park” – Solen and Pramana are crafted for homebuyers who are looking for the type of spacious living that they’ve been accustomed to at the time when they spent their childhood by the lakes, woods, or fields of their provinces.</a>
+                                                        </div><br>
+                                                        <img alt="" class="img-thumbnail" src="assets/img/news/urban2.jpg" style="height:400px; width: 690px">
+                                                       <br><br>
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Interactions with nature are a part of life at Solen and Pramana, while residents enjoy comfortable living in modern homes. House and lot sizes in Solen usually range from 155 sqm to 288 sqm, while Pramana offers 155 sqm to 300 sqm units.</a>
+                                                        </div><br>
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">To make both communities relevant through the times, the developer upholds respect for nature as evident in the dedicated open spaces and abundance of greeneries. Spanning a total of 51 hectares, Solen allots more than half to green open space, a small lake, a 5,000-sqm nature park, as well as tree-lined roads, to serve as the backdrop for the subdivision’s amenities.</a>
+                                                        </div><br>
+
+                                                        <div>
+                                                            <a style="font-size: 15px; color: black;">Residents can unwind at the pool area, or otherwise maintain an active lifestyle at the well-equipped gym room and basketball court. The kids, meanwhile, can bond with other kids at the children’s pavilion, nature park, and playgrounds.</a>
+                                                        </div><br>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
