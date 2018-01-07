@@ -1531,7 +1531,8 @@ function propertylist(){
 			$stmt->execute();
 			$count = (int)$stmt->rowCount();
 			$results = $stmt->fetchAll();
-			$link = 'index.php?source=profile';
+			
+			$i1 = "'";
 			foreach($results as $row) {
 				if($row['Status']=='Active'){
 					$status='Available';
@@ -1541,13 +1542,12 @@ function propertylist(){
 				}
 				
 				
-				
 				echo'<tr href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'"><a href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'">
                       <td><a href="index.php?source=property-page&propId='.htmlentities($row['Property_ID']).'">' . htmlentities($row['Title']) . '</a></td>
                       <td>P' . htmlentities($row['Price']) . '</td>
                       <td>'.$status.'</td>
                       <td>' . htmlentities($row['Country']) . '</td>
-                    <td><button type="button" class="btn btn-primary">Edit</button></td>
+                    <td><form action="index.php" method="get"><input type="hidden" name="source" value="editproperty"><input type="hidden" name="propId" value="'.htmlentities($row['Property_ID']).'"><button type="submit" class="btn btn-primary">Edit</button></form></td>
                     </a></tr> ';
 				
 			}
