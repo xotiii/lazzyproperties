@@ -292,16 +292,16 @@ input[type="search"]::-webkit-search-decoration {
 }
 .btn-primary {
     color: #FFF;
-    background-color: #33aabb;
-    border-color: #33aabb;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
     border-radius: 1px;
     padding: 10px 20px;
     font-weight: 600;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,.btn-primary:active:focus, .open > .dropdown-toggle.btn-primary {
-    color: #33aabb;
-    background-color: #313538;
-    border-color: #282829;
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
     font-weight: 600;
 }
 .btn-default {
