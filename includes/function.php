@@ -146,7 +146,7 @@ function login(){
 	}
 }
 
-function post_property(){
+function edit_property(){
 	
 	$servername = "localhost";
 	$username = "root";
@@ -161,31 +161,28 @@ function post_property(){
 		echo 'Connection failed: ' . $ex->getmessage();
 	}
 	
-	if (isset($_POST['post_submit'])) 
+	if (isset($_POST['edit_submit'])) 
 	{				
 		try{
 			//Insert User Details
-			$stmt = $dbh->prepare("INSERT INTO Property (Title, Type, Price, Description, User_ID) 
-									VALUES (:title, :type, :price, :description, :user_id)");
+			$stmt = $dbh->prepare("UPDATE Property SET Title=:title, Type=:type, Price=:price, Description=:description, Status='Active' 
+									WHERE Property_ID=:prop_ID");
 			$stmt->bindParam(':title', $title);
 			$stmt->bindParam(':type', $type);
 			$stmt->bindParam(':price', $price);
 			$stmt->bindParam(':description', $description);
-			$stmt->bindParam(':user_id',$user_id);
+			$stmt->bindParam(':prop_ID',$prop_ID);
 			$title = $_POST['post_title'];
 			$type = $_POST['post_type'];
 			$price = $_POST['post_price'];
 			$description = htmlentities($_POST['post_description'], ENT_QUOTES, 'UTF-8');
-			$user_id = $_SESSION['ID'];
+			
+			$prop_ID = $_GET['propId'];
 			$stmt->execute();
-			//Check last ID
-			$stmt = $dbh->prepare("SELECT LAST_INSERT_ID() FROM Property");
-			$stmt->execute();
-			$result = $stmt->fetchColumn();
 			//Insert Contact Details
-			$stmt = $dbh->prepare("INSERT INTO Property_Location (Property_ID, Country, Zip, State, City, StreetAddress) 
-									VALUES (:property_id, :country, :zip, :state, :city, :streetaddress)");
-			$stmt->bindParam(':property_id', $result);
+			$stmt = $dbh->prepare("UPDATE Property_Location SET Country=:country, Zip=:zip, State=:state, City=:city, StreetAddress=:streetaddress 
+									WHERE Property_ID=:property_id");
+			$stmt->bindParam(':property_id', $prop_ID);
 			$stmt->bindParam(':country', $country);
 			$stmt->bindParam(':zip', $zip);
 			$stmt->bindParam(':state', $state);
@@ -197,9 +194,9 @@ function post_property(){
 			$city = $_POST['post_city'];
 			$route = $_POST['post_route'];
 			$stmt->execute();
-			$stmt = $dbh->prepare("INSERT INTO Property_Features (Property_ID, Stories, Bed, Bath, Garage) 
-									VALUES (:property_id, :stories, :bed, :bath, :garage)");
-			$stmt->bindParam(':property_id', $result);
+			$stmt = $dbh->prepare("UPDATE Property_Features SET Stories=:stories, Bed=:bed, Bath=:bath, Garage=:garage 
+									WHERE Property_ID=:property_id");
+			$stmt->bindParam(':property_id', $prop_ID);
 			$stmt->bindParam(':stories', $stories);
 			$stmt->bindParam(':bed', $bed);
 			$stmt->bindParam(':bath', $bath);
@@ -209,70 +206,19 @@ function post_property(){
 			$bath = $_POST['post_bath'];
 			$garage = $_POST['post_garage'];
 			$stmt->execute();
-			$stmt = $dbh->prepare("INSERT INTO Property_Size (Property_ID, Land, Floor) 
-									VALUES (:property_id, :land, :floor)");
-			$stmt->bindParam(':property_id', $result);
+			$stmt = $dbh->prepare("UPDATE Property_Size SET Land=:land, Floor=:floor 
+									WHERE Property_ID=:property_id");
+			$stmt->bindParam(':property_id', $prop_ID);
 			$stmt->bindParam(':land', $land);
 			$stmt->bindParam(':floor', $floor);
 			$land = $_POST['post_land'];
 			$floor = $_POST['post_floor'];
 			$stmt->execute();
-			echo "Property Posted!";
+			echo "Edited Post Saved!";
 			//echo "<script> location.href = 'index.php' </script>";
 			//echo "Error Code: " . $stmt->errorCode();
 			// Upload
-			$uploadImages = new uploadImages();
-
-			/* Images are required */
-			if ($uploadImages->countImages() > 0)
-			{
-				
-				/* Default validation:
-					$uploadImages->image_type = "jpg|jpeg|png|gif";
-					$uploadImages->min_size = "";
-					$uploadImages->min_size = 24;
-					$uploadImages->max_size = (1024*1024*3);
-					$uploadImages->max_files = 10;
-				*/
-				
-				/* Validate */
-				if ($uploadImages->validateImages())
-				{
-					$i=1;
-					print("<h3 class='text-info'>IMAGES</h3>");
-					/* images array */
-					$images = $uploadImages->getImages();
-					$path="images/prop".$result;
-					if (!file_exists($path)) {
-						mkdir($path, 0700);
-					}
-					foreach ($images as $image)
-					{
-						/* save the image */
-						if ($uploadImages->saveImage($image["tmp_name"], "images/prop/".$result."/", $i))
-						{
-							print ("<p class='text-success'>· <strong>" . $image["name"] . "</strong> saved in images folder</p>");
-						}
-						else
-						{
-							print("<p class='text-danger'>· " . $image["name"] . " error to saved</p>");
-						}
-						$i++;
-					}
-					/* GET EXTRA PARAMETERS */
-				}
-				else /* Show errors array */
-				{
-					print_r($uploadImages->error);
-				}
-			}
-			else
-			{
-				print("<p class='text-danger'>images required</p>");
-			}
-			
-			
-			
+			echo "<script> location.href = 'index.php?source=editproperty-success&prop_Id=".$prop_ID."' </script>";
 		}
 		catch(PDOException $e){
 			if($e->getCode() === '23000')
@@ -899,6 +845,76 @@ function property_list() {
 	
 }
 
+function edit_property_data($selector){
+
+	$Id='';
+	$Status='';
+	if(isset($_GET['propId'])){
+		$Id = $_GET['propId'];
+	}
+	else {
+		$Id='';
+		// Go to error page
+	}
+	$uID='';
+	if(isset($_SESSION['ID'])){
+		$uID = $_SESSION['ID'];
+	}
+	else {
+		$uID='';
+	}
+	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	try{
+	
+    $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
+                    $username,
+                    $password);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	}
+	catch(PDOException $ex){
+		echo 'Connection failed: ' . $ex->getmessage();
+	}
+	
+	if(!$Id==''){
+		try{
+			
+			//Select User With Same Email && Pass
+			$stmt = $dbh->prepare("SELECT * FROM Property_Page WHERE Property_ID= :idd");
+			$stmt->bindParam(':idd', $Id);
+			$stmt->execute();
+			$count = (int)$stmt->rowCount();
+			$results = $stmt->fetchAll();
+			foreach($results as $row) {
+				
+				if($selector=='Type1'){
+					if(htmlentities($row['Type'])=='a'){
+						echo 'selected';
+					}
+				}
+				else if($selector=='Type2'){
+					if(htmlentities($row['Type'])=='b'){
+						echo 'selected';
+					}
+				}
+				else {
+					echo htmlentities($row[$selector]);
+				}
+			}
+		}
+		catch(PDOException $e){
+			echo "Error: " . $e->getMessage();
+		}
+	}
+	else {
+		header('Location: index.php');
+		exit;
+
+	}
+}
+
 function property_page(){
 	$Id='';
 	$Status='';
@@ -907,6 +923,7 @@ function property_page(){
 	}
 	else {
 		$Id='';
+		// Go to error page
 	}
 	$uID='';
 	if(isset($_SESSION['ID'])){
@@ -1392,7 +1409,7 @@ function profile_settings($selector){
 	try{
 			$ID = $_GET['User_ID'];
 
-			$query="SELECT * FROM User_Profile where User_ID =:User_ID ";
+			$query="SELECT * FROM User_Profile where User_ID=:User_ID ";
 			
 			//Select User With Same Email && Pass
 			$stmt = $dbh->prepare($query);

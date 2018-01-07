@@ -6,7 +6,7 @@ session_start();?>
 <?php include "includes/connection.php" ?>
 <?php include "includes/function.php" ?>
 
-<?php include "includes/connect.php" ?>
+
 
 
 <?php 
@@ -67,8 +67,14 @@ session_start();?>
         case 'postproperty':
              include "includes/post-property.php";
              break;
+		case 'editproperty':
+             include "includes/edit-property.php";
+             break;
         case 'property-success':
              include "includes/property-success.php"; 
+            break;
+		case 'editproperty-success':
+             include "includes/editproperty-success.php"; 
             break;
 		case 'prof-pic-success':
              include "includes/prof-pic-success.php"; 
