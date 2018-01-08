@@ -526,7 +526,7 @@ function property_list() {
 				
 				echo'
 				<div class="sblogBox smoreBox" style="display: none;">
-				<div class="col-sm-6 col-md-4 p0">
+				<div class="col-sm-6 col-md-3 p0">
                     <div class="box-two proerty-item">
                         <div class="item-thumb">
                             <a href="index.php?source=property-page&propId=' . htmlentities($row['Property_ID']) . '" ><img src="includes/images/prop/'.htmlentities($row['Property_ID']).'/1.jpg"></a>
