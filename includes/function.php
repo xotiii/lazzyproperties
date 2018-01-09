@@ -2219,19 +2219,39 @@ function change_pass(){
 function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
-				$to = "xoti.chua@gmail.com";
+				$to = $_POST['cont_email'];
                 $subject = "INQUIRY: " . $_POST['cont_subj'];
                 $txt = "Name: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMobile Number: " . $_POST['mobile'] . "\n\n\t" . $_POST['message'] ;
                 $headers = "From: noreply@lazzyproperty.com";
 
                 mail($to,$subject,$txt,$headers);
-$success = mail($to,$subject,$txt,$headers);
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
+			$success = mail($to,$subject,$txt,$headers);
+			if (!$success) {
+				$errorMessage = error_get_last()['message'];
+			}
+			else{
+						echo 'Message successfully sent3!';
+			}
+	}
+
 }
-else{
-			echo 'Message successfully sent3!';
-}
+
+function contact_us(){
+
+	if(isset($_POST['contact_us'])){
+				$to = "support@lazzyproperty.com";
+                $subject = "SUPPORT: " . $_POST['email'];
+                $txt = "Name: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMobile Number: " . $_POST['mobile'] . "\n\n\t" . $_POST['message'] ;
+                $headers = "From: " . $_POST['email'];
+
+                mail($to,$subject,$txt,$headers);
+			$success = mail($to,$subject,$txt,$headers);
+			if (!$success) {
+				$errorMessage = error_get_last()['message'];
+			}
+			else{
+						echo 'Message successfully sent3!';
+			}
 	}
 
 }

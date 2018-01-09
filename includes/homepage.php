@@ -167,7 +167,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button class="close" data-dismiss="modal" type="button">&times;</button>
-                  <h1 class="modal-title">FOR RENT</h1>
+                  <h1 class="modal-title">For Rent</h1>
                 </div>
                 <div class="modal-body">
                   <!-- -->
@@ -229,7 +229,7 @@
                           <form action="" class="form-inline">
                             <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forrent">
                             <div class="form-group">
-                              <input class="col-xs-12 form-control" id="autocomplete1" onfocus="geolocate()" placeholder="Search a Property" type="text"> <input id="country1" name="country" type="hidden"> <input id="postal_code1" name="zip" type="hidden"> <input id="administrative_area_level_11" name="state" type="hidden"> <input id="locality1" name="city" type="hidden"> <input id="route1" name="route" type="hidden"> <input id="street_number1" type="hidden">
+                              <input class="col-xs-12 form-control" id="autocomplete1" onfocus="geolocate1()" placeholder="Search a Property" type="text"> <input id="country1" name="country" type="hidden"> <input id="postal_code1" name="zip" type="hidden"> <input id="administrative_area_level_11" name="state" type="hidden"> <input id="locality1" name="city" type="hidden"> <input id="route1" name="route" type="hidden"> <input id="street_number1" type="hidden">
                             </div>
                             <div class="search-row">
                               <div class="form-group">
@@ -324,9 +324,7 @@
                         <div class="tab-pane" id="com">
                           <form action="" class="form-inline">
                             <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="commercialland">
-                            <div class="form-group">
-                              <input class="col-xs-12 form-control" id="autocomplete3" onfocus="geolocate3()" placeholder="Search a Property" type="text"> <input id="country3" name="country" type="hidden"> <input id="postal_code3" name="zip" type="hidden"> <input id="administrative_area_level_13" name="state" type="hidden"> <input id="locality3" name="city" type="hidden"> <input id="route3" name="route" type="hidden"> <input id="street_number3" type="hidden">
-                            </div>
+                            
                             <div class="search-row">
                               <div class="form-group">
                                 <input class="form-control" name="minprice" placeholder="Minimum Price" type="text">
@@ -381,7 +379,7 @@
                               <form action="" class="form-inline">
                                 <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forsale">
                                 <div class="form-group">
-                                  <input class="col-xs-6 form-control" id="autocomplete" onfocus="geolocate()" placeholder="Search a Property" type="text"> <input id="country" name="country" type="hidden"> <input id="postal_code" name="zip" type="hidden"> <input id="administrative_area_level_1" name="state" type="hidden"> <input id="locality" name="city" type="hidden"> <input id="route" name="route" type="hidden"> <input id="street_number" type="hidden">
+                                  <input class="col-xs-6 form-control" id="autocomplete3" onfocus="geolocate3()" placeholder="Search a Property" type="text"> <input id="country3" name="country" type="hidden"> <input id="postal_code3" name="zip" type="hidden"> <input id="administrative_area_level_13" name="state" type="hidden"> <input id="locality3" name="city" type="hidden"> <input id="route3" name="route" type="hidden"> <input id="street_number3" type="hidden">
                                 </div>
                                 <div class="search-row">
                                   <div class="form-group">
@@ -429,7 +427,7 @@
                               <form action="" class="form-inline">
                                 <input name="source" type="hidden" value="property-forsale"> <input name="type" type="hidden" value="forrent">
                                 <div class="form-group">
-                                  <input class="col-xs-12 form-control" id="autocomplete1" onfocus="geolocate()" placeholder="Search a Property" type="text"> <input id="country1" name="country" type="hidden"> <input id="postal_code1" name="zip" type="hidden"> <input id="administrative_area_level_11" name="state" type="hidden"> <input id="locality1" name="city" type="hidden"> <input id="route1" name="route" type="hidden"> <input id="street_number1" type="hidden">
+                                  <input class="col-xs-12 form-control" id="autocomplete1" onfocus="geolocate1()" placeholder="Search a Property" type="text"> <input id="country1" name="country" type="hidden"> <input id="postal_code1" name="zip" type="hidden"> <input id="administrative_area_level_11" name="state" type="hidden"> <input id="locality1" name="city" type="hidden"> <input id="route1" name="route" type="hidden"> <input id="street_number1" type="hidden">
                                 </div>
                                 <div class="search-row">
                                   <div class="form-group">
