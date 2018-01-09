@@ -13,8 +13,8 @@ $prof_email='a';
 $prof_mobile='a';
 
 $servername = "localhost";
-$username="root";
-$password="";
+$username="lazzy";
+$password="wonglazzy";
 
 
 function reg_user()
@@ -2219,7 +2219,7 @@ function change_pass(){
 function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
-				$to = "xoti.chua@gmail.com";
+				$to = $_POST['cont_email'];
                 $subject = "INQUIRY: " . $_POST['cont_subj'];
                 $txt = "Name: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMobile Number: " . $_POST['mobile'] . "\n\n\t" . $_POST['message'] ;
                 $headers = "From: noreply@lazzyproperty.com";

@@ -1,5 +1,6 @@
 
 
+
 <nav class="navbar navbar-default navbar-static-top ">
 
             <div class="container">
@@ -79,7 +80,7 @@
                       
 
 
-              <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a id="prop"  href="index.php?source=loginandregister"><span id="plus" class="glyphicon glyphicon-user"></span> Login/Register</a>
+              <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a id="prop"  href="includes /value.php"><span id="plus" class="glyphicon glyphicon-user"></span> Login/Register</a>
  </li>';
 							
 						}
@@ -97,7 +98,7 @@
               }
               </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-                 <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a id="prop"  href="index.php?source=postproperty"><span id="plus" class="glyphicon glyphicon-plus"></span> <strong>Post a Property!</strong></a></li>
+                 <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a id="prop"  href="includes /value.php"><span id="plus" class="glyphicon glyphicon-plus"></span> <strong>Post a Property!</strong></a></li>
                <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a href="index.php?source=guide">Guide</a></li>
 			   <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a href="index.php?source=news">News</a></li>
                <li class="dropdown ymm-sw " data-wow-delay="0.1s"><a href="index.php?source=agsatbrkr">Agencies & Brokers</a></li>

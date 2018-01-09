@@ -74,9 +74,14 @@ session_start();?>
              include "includes/propertyadvertise.php"; 
             break;
         case 'postproperty':
-             include "includes/post-property.php";
+             if(!isset($_SESSION['ID'])){
+                 include "includes/login-register.php";
+             }
+             else {
+                 include "includes/post-property.php";
+             }
              break;
-		case 'editproperty':
+        case 'editproperty':
              include "includes/edit-property.php";
              break;
         case 'property-success':

@@ -12,17 +12,13 @@ $prof_lname='a';
 $prof_email='a';
 $prof_mobile='a';
 
-$servername = "localhost";
-$username="root";
-$password="";
-
 
 function reg_user()
 {
 	
-	global $servername;
-	global $username;
-	global $password;
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -90,10 +86,9 @@ function reg_user()
 
 function login(){
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -153,10 +148,9 @@ function login(){
 
 function edit_property(){
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -327,10 +321,9 @@ function property_list() {
 	
 	
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -871,10 +864,9 @@ function edit_property_data($selector){
 		$uID='';
 	}
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
 	
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
@@ -941,10 +933,9 @@ function property_page(){
 		$uID='';
 	}
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$i = '';
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
@@ -1260,10 +1251,9 @@ function property_page(){
 
 function home(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1324,11 +1314,9 @@ function home(){
 }
 
 function profile(){
-	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1405,11 +1393,9 @@ function profile(){
 }
 
 function profile_settings($selector){
-	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1468,10 +1454,9 @@ function profile_settings($selector){
 
 function save_info(){
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1522,11 +1507,9 @@ function save_info(){
 
 
 function propertylist(){
-	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1584,11 +1567,9 @@ function propertylist(){
 
 
 function propertylistview(){
-	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1654,10 +1635,9 @@ function propertylistview(){
 
 function prop_list(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$i = "'";
 	$userID = $_GET['uId'];
 	try{
@@ -1718,10 +1698,9 @@ function prop_list(){
 
 function send_new_message(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1776,10 +1755,9 @@ function send_new_message(){
 
 function inbox_list(){
 	
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$status='';
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
@@ -1896,10 +1874,9 @@ function inbox_list(){
 
 function delete_message(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1936,10 +1913,9 @@ function delete_message(){
 
 function reply_message(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -1986,47 +1962,11 @@ function reply_message(){
 
 }
 
-function contact_info(){
-	
-	global $servername;
-	global $username;
-	global $password;
-	
-	try{
-			$dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
-                    $username,
-                    $password);
-			$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			}
-		catch(PDOException $ex){
-			echo 'Connection failed: ' . $ex->getmessage();
-		}
-		$Id = $_GET['propId'];
-			try{
-				//Select User With Same Email && Pass
-				$stmt = $dbh->prepare("SELECT * FROM Property_Page WHERE Property_ID= :idd");
-				$stmt->bindParam(':idd', $Id);
-				$stmt->execute();
-				$count = (int)$stmt->rowCount();
-				$results = $stmt->fetchAll();
-				foreach($results as $row) {
-					echo '<input type="hidden" name="cont_subj" value="'.htmlentities($row['Title']).'"><input type="hidden" name="cont_email" value="'.htmlentities($row['Email']).'">';
-				}
-				
-			}
-			catch(PDOException $e){
-				echo $query;
-				echo "Error: " . $e->getMessage();
-			}
-	
-}
-
 function sent_list(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	$indent='';
 	$status='';
 	try{
@@ -2131,10 +2071,9 @@ function sent_list(){
 
 function delete_sent(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -2171,10 +2110,9 @@ function delete_sent(){
 
 function change_pass(){
 
-	global $servername;
-	global $username;
-	global $password;
-	
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
 	try{
     $dbh = new pdo( "mysql:host=localhost;dbname=lazzypropertiesdb",
                     $username,
@@ -2219,19 +2157,13 @@ function change_pass(){
 function contact_seller(){
 
 	if(isset($_POST['contact_seller'])){
-				$to = "xoti.chua@gmail.com";
-                $subject = "INQUIRY: " . $_POST['cont_subj'];
-                $txt = "Name: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMobile Number: " . $_POST['mobile'] . "\n\n\t" . $_POST['message'] ;
-                $headers = "From: noreply@lazzyproperty.com";
-
-                mail($to,$subject,$txt,$headers);
-$success = mail($to,$subject,$txt,$headers);
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
-}
-else{
-			echo 'Message successfully sent3!';
-}
+		
+		$to      = 'nobody@example.com';
+		$subject = 'the subject';
+		$message = 'hello';
+		$headers = 'From: noreply@lazzyproperty.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
+			mail($to, $subject, $message, $headers);
+			echo 'Message successfully sent!';
 	}
 
 }
